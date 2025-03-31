@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Isabella Pedraza</h1>
+            <p>Software Engineer  |  Houston TX</p>
+            <button class="imessage-btn" onclick="sendiMessage()">Contact me </button>
+        </div>
+    </section>
+    
+    <script>
+        function sendiMessage() {
+            const phoneNumber = "3468374748";  // # telefono
+            const message = "¡Hello! I'd like to schedule an interview with you.";  // El mensaje predeterminado
+            const smsUrl = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
+            window.location.href = smsUrl;
+        }
+    </script>
+    
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+        <div style="text-align: justify;">
+            <p class="justified-text">
+            <p>Passionate about technology and digital creativity, 
+            I specialize in web design using Html, CSS and basic Java Script 
+            also platforms like Shopify and Wix. 
+            With a background in Software Engineering, 
+            I have a strong eye for aesthetics and functionality, 
+            blending my skills in web design, photography, 
+            and video editing to create visually compelling digital experiences. </p></div></p>
+        </div> 
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Basic JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress javascript"></div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2>Contact me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Isabella Pedraza Inc. All rights reserved. </p>
+        </div>
+    </footer>
+</body>
+</html>

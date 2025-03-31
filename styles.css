@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #dfe0e8;
+    color: #333;
+}
+.justified-text {
+    text-align: justify;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1, h2, h3 {
+    color: #0e0e0e;
+}
+
+.hero {
+    background-color: #90bbe7;
+    color: #f1f1f1;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.hero .btn { /* margenes bordes */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #ffff00;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.about, .skills, .contact {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.skills .skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1;
+    min-width: 200px;
+}
+
+.progress-bar {
+    background-color: #f4f4f4;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+.html { width: 90%; background-color: #ff5733; }
+.css { width: 80%; background-color: #33ccff; }
+.javascript { width: 70%; background-color: #ffcc00; }
+.react { width: 60%; background-color: #61dbfb; }
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #bb2b2b;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+/* Estilos generales del botón */
+.imessage-btn {
+    background-color: #007AFF; /* Color azul de iMessage */
+    color: white; /* Texto blanco */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 12px 24px; /* Espaciado interior del botón (arriba-abajo, izquierda-derecha) */
+    border: none; /* Sin bordes */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto suave para el cambio de color */
+    text-align: center; /* Alinear el texto al centro */
+    display: inline-block; /* Para que el botón no ocupe todo el ancho */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo del botón cuando el cursor está encima */
+.imessage-btn:hover {
+    background-color: #00a33e; /* Cambiar a un azul más oscuro cuando se pasa el mouse */
+}
+
+/* Estilo del botón cuando se presiona */
+.imessage-btn:active {
+    background-color: #0bca3e; /* Azul aún más oscuro cuando el botón es presionado */
+}
+
+/* Estilos adicionales si lo deseas */
+.imessage-btn:focus {
+    outline: none; /* Eliminar el borde cuando el botón recibe foco */
+}
